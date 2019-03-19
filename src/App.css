@@ -1,33 +1,107 @@
-.App {
-  text-align: center;
+
+.container {
+  padding: 50px 16px 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.controls {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #292a2b;
+  color: #FFF;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  padding: 8px 16px;
+}
+
+.tab {
+  width: 50%;
+  color: #FFF;
+  border: 0;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 8px 16px;
+  outline: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+.bar {
+  position: relative;
+  width: 50%;
+  border: 0;
+  background-color: #FFF;
+  height: 5px;
+  border-radius: 3px;
+}
+
+.wrapper {
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  padding: 10px 0 0 0;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
+}
+
+.tweet {
   color: white;
+  background: linear-gradient(135deg, #c3cfe2 0%, #c3cfe2 100%);
+  opacity: 0.9;
+  padding: 32px 32px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 1px 2px 0px;
+  height: auto;
+  border-radius: 3px;
+  margin-bottom: 0;
+  font-weight: bold;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.iamdevloper {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CommitStrip {
+  background: linear-gradient(135deg, #5ee7df 0%, #b490ca 100%);
+}
+
+.author {
+  margin: 0;
+  font-size: 18px;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  margin-bottom: 8px;
+}
+
+.message {
+  margin: 0;
+  font-size: 28px;
+  line-height: 32px;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+.like-it {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.reset {
+  width: 100%;
+  padding: 16px;
+  background-color: rgb(255, 105, 180);
+  font-weight: bold;
+  border: 0;
+  border-radius: 3px;
+  margin: 12px 0;
+  color: #FFF;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
 }
